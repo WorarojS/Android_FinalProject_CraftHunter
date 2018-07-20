@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="horizontal"
+    android:background="@drawable/bg2"
+    android:paddingBottom="20dp"
+    android:fitsSystemWindows="true"
+    tools:ignore="ContentDescription">
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                android:id="@+id/backBut"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                android:background="@android:drawable/ic_menu_revert"
+                android:onClick="stanley" />
+
+                <ImageButton
+                    android:id="@+id/shareBut"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:drawable/ic_menu_share"
+                    android:onClick="shareBtn" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/Pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/Des"
+                android:layout_gravity="center"
+                />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/medium"
+                android:text="@string/name"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/Head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"/>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:context=".MapsActivity" />
+        </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/Des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/light"
+                android:padding="15dp"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="50dp"
+                android:paddingLeft="20dp"
+                android:fontFamily="@font/medium"
+                android:text="@string/Product"
+                android:textColor="#FFFFFF"
+                android:textSize="50dp" />
+
+            <GridLayout
+                android:id="@+id/grid1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:useDefaultMargins="true">
+
+                <ImageButton
+                    android:id="@+id/subBut1"
+                    android:tag="0"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+
+
+                    />
+                <ImageButton
+                    android:id="@+id/subBut2"
+                    android:tag="1"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+
+                    />
+                <ImageButton
+                    android:id="@+id/subBut3"
+                    android:tag="2"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+
+                    />
+                <ImageButton
+                    android:id="@+id/subBut4"
+                    android:tag="3"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+
+                    />
+            </GridLayout>
+
+    </LinearLayout></LinearLayout>
+
+</ScrollView>
