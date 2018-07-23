@@ -25,25 +25,108 @@ public class SubActivity extends AppCompatActivity {
 
         Intent mIntent = getIntent();
         int result = mIntent.getIntExtra("code", 0);
-
+        //stanley
         if (result <= 3) {
             head.setText(mLibrary.getHead1(result));
             pic.setImageResource(mLibrary.getmSub1(result));
             des.setText(mLibrary.getDes1(result));
             //BomberSub
-        }if (result == 4) {
+        }
+        if (result == 4) {
             head.setText(mLibrary.getHead2(0));
             pic.setImageResource(mLibrary.getmSub2(0));
             des.setText(mLibrary.getDes2(0));
-        }if (result == 5) {
+        }
+        if (result == 5) {
             head.setText(mLibrary.getHead2(1));
             pic.setImageResource(mLibrary.getmSub2(1));
             des.setText(mLibrary.getDes2(1));
-        }if (result == 5) {
+        }
+        if (result == 6) {
             head.setText(mLibrary.getHead2(2));
             pic.setImageResource(mLibrary.getmSub2(2));
             des.setText(mLibrary.getDes2(2));
+            //acres sub
         }
+        if (result == 7) {
+            head.setText(mLibrary.getHead4(0));
+            pic.setImageResource(mLibrary.getSub4(0));
+            des.setText(mLibrary.getDes4(0));
+        }
+        if (result == 8) {
+            head.setText(mLibrary.getHead4(1));
+            pic.setImageResource(mLibrary.getmSub2(1));
+            des.setText(mLibrary.getDes4(1));
+        }if (result == 9) {
+            head.setText(mLibrary.getHead4(2));
+            pic.setImageResource(mLibrary.getSub4(2));
+            des.setText(mLibrary.getDes4(2));
+
+
+            //andin
+        }
+        if (result == 10) {
+            head.setText(mLibrary.getHead5(0));
+            pic.setImageResource(mLibrary.getSub5(0));
+            des.setText(mLibrary.getDes5(0));
+        }
+        if (result == 11) {
+            head.setText(mLibrary.getHead5(1));
+            pic.setImageResource(mLibrary.getSub5(1));
+            des.setText(mLibrary.getDes5(1));
+        }
+        if (result == 12) {
+            head.setText(mLibrary.getHead5(2));
+            pic.setImageResource(mLibrary.getSub5(2));
+            des.setText(mLibrary.getDes5(2));
+        }if (result == 13) {
+            head.setText(mLibrary.getHead5(3));
+            pic.setImageResource(mLibrary.getSub5(3));
+            des.setText(mLibrary.getDes5(3));
+        }
+
+        //bigrock
+
+        if (result == 14) {
+            head.setText(mLibrary.getHead6(0));
+            pic.setImageResource(mLibrary.getSub6(0));
+            des.setText(mLibrary.getDes6(0));
+        }
+        if (result == 15) {
+            head.setText(mLibrary.getHead6(1));
+            pic.setImageResource(mLibrary.getSub6(1));
+            des.setText(mLibrary.getDes6(1));
+        }
+        if (result == 16) {
+            head.setText(mLibrary.getHead6(2));
+            pic.setImageResource(mLibrary.getSub6(2));
+            des.setText(mLibrary.getDes6(2));
+        }if (result == 17) {
+            head.setText(mLibrary.getHead6(3));
+            pic.setImageResource(mLibrary.getSub6(3));
+            des.setText(mLibrary.getDes6(3));
+        }
+        //mainstreet
+        if (result == 18) {
+            head.setText(mLibrary.getHead7(0));
+            pic.setImageResource(mLibrary.getSub7(0));
+            des.setText(mLibrary.getDes7(0));
+        }
+        if (result == 19) {
+            head.setText(mLibrary.getHead7(1));
+            pic.setImageResource(mLibrary.getSub7(1));
+            des.setText(mLibrary.getDes7(1));
+        }
+        if (result == 20) {
+            head.setText(mLibrary.getHead7(2));
+            pic.setImageResource(mLibrary.getSub7(2));
+            des.setText(mLibrary.getDes7(2));
+        }if (result == 21) {
+            head.setText(mLibrary.getHead7(3));
+            pic.setImageResource(mLibrary.getSub7(3));
+            des.setText(mLibrary.getDes7(3));
+        }
+
     }
 
     public void stanley(View view) {

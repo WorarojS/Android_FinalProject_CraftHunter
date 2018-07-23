@@ -67,6 +67,62 @@
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="50dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/call_but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call"
+                android:fontFamily="@font/medium"
+                android:textColor="#ffffff"
+                android:textSize="10dp"
+                android:onClick="callBut"
+                android:background="@null"
+                />
+            <Button
+                android:id="@+id/web_but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visit out website"
+                android:fontFamily="@font/medium"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#ffffff"
+                android:textSize="10dp"
+                android:onClick="webBut"
+                android:background="@null"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:onClick="dash">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Delivery by"
+                    android:fontFamily="@font/medium"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    />
+                <ImageButton
+                    android:id="@+id/dash"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
 
             <TextView
                 android:id="@+id/Head"
@@ -76,6 +132,8 @@
                 android:padding="10dp"
                 android:textColor="#FFFFFF"
                 android:textSize="17dp"/>
+
+
 
         <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -104,7 +162,7 @@
                 android:fontFamily="@font/light"
                 android:padding="15dp"
                 android:textColor="#FFFFFF"
-                android:textSize="15sp"
+                android:textSize="17sp"
                 />
             <TextView
                 android:id="@+id/product"
