@@ -61,6 +61,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         LatLng andina = new LatLng(49.283426, -123.073944);
         LatLng bigrock = new LatLng(49.267202, -123.111560);
         LatLng main = new LatLng(49.264699, -123.099326);
+        LatLng offrail = new LatLng(49.277840, -123.075981);
+        LatLng postmarl = new LatLng(49.284143, -123.095711);
         mMap.addMarker(new MarkerOptions().position(Stanley).title("Stanley brewing"));
         mMap.addMarker(new MarkerOptions().position(Bomber).title("Bomber brewing"));
         mMap.addMarker(new MarkerOptions().position(Yaletown).title("Yaletown brewing"));
@@ -68,6 +70,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMap.addMarker(new MarkerOptions().position(andina).title("Andina brewing"));
         mMap.addMarker(new MarkerOptions().position(bigrock).title("Bigrock brewing"));
         mMap.addMarker(new MarkerOptions().position(main).title("Main Street brewing"));
+        mMap.addMarker(new MarkerOptions().position(offrail).title("Off The Rail Brewing Co."));
+        mMap.addMarker(new MarkerOptions().position(postmarl).title("Postmark Brewing Co."));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Stanley));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(10));
     }

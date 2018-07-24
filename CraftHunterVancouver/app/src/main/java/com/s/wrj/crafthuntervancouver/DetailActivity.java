@@ -144,15 +144,15 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
                 }
             });
 //acres brew
-        }else if (result == 3){
+        } else if (result == 3) {
             mSub1.setImageResource(mLibrary.getSub4(0));
             mSub1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
                     Intent intent = new Intent(DetailActivity.this, SubActivity.class);
                     intent.putExtra("code", 7);
                     startActivity(intent);
-                                         }
-                                     });
+                }
+            });
             mSub2.setImageResource(mLibrary.getSub4(1));
             mSub2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
@@ -170,7 +170,7 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
                 }
             });
             //andina
-        }else if (result == 4) {
+        } else if (result == 4) {
             mSub1.setImageResource(mLibrary.getSub5(0));
             mSub1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
@@ -204,7 +204,7 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
                 }
             });
             //bigrock
-        }else if (result == 5){
+        } else if (result == 5) {
             mSub1.setImageResource(mLibrary.getSub6(0));
             mSub1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
@@ -239,7 +239,7 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
             });
             //mainstreet
 
-        }else if (result == 6) {
+        } else if (result == 6) {
             mSub1.setImageResource(mLibrary.getSub7(0));
             mSub1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
@@ -272,9 +272,75 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
                     startActivity(intent);
                 }
             });
+            //off rail
+        }else if (result == 7) {
+            mSub1.setImageResource(mLibrary.getSub8(0));
+            mSub1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 22);
+                    startActivity(intent);
+                }
+            });
+            mSub2.setImageResource(mLibrary.getSub8(1));
+            mSub2.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 23);
+                    startActivity(intent);
+                }
+            });
+            mSub3.setImageResource(mLibrary.getSub8(2));
+            mSub3.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 24);
+                    startActivity(intent);
+                }
+            });
+            mSub4.setImageResource(mLibrary.getSub8(3));
+            mSub4.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 25);
+                    startActivity(intent);
+                }
+            });
         }
-
-
+        else if (result == 8) {
+            mSub1.setImageResource(mLibrary.getSub9(0));
+            mSub1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 26);
+                    startActivity(intent);
+                }
+            });
+            mSub2.setImageResource(mLibrary.getSub9(1));
+            mSub2.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 27);
+                    startActivity(intent);
+                }
+            });
+            mSub3.setImageResource(mLibrary.getSub9(2));
+            mSub3.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 28);
+                    startActivity(intent);
+                }
+            });
+            mSub4.setImageResource(mLibrary.getSub9(3));
+            mSub4.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 29);
+                    startActivity(intent);
+                }
+            });
+        }
 
         initView();
     }
@@ -316,31 +382,49 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
             mMap.addMarker(new MarkerOptions().position(Bomber).title("Bomber brewing"));
             mMap.moveCamera(CameraUpdateFactory.newLatLng(Bomber));
             mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
-        }if (result == 2) {
+        }
+        if (result == 2) {
             LatLng Yaletown = new LatLng(49.275573, -123.120998);
             mMap.addMarker(new MarkerOptions().position(Yaletown).title("Yaletown brewing"));
             mMap.moveCamera(CameraUpdateFactory.newLatLng(Yaletown));
             mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
-        }if (result == 3){
+        }
+        if (result == 3) {
             LatLng acres = new LatLng(49.263965, -123.105356);
             mMap.addMarker(new MarkerOptions().position(acres).title("33Acres brewing"));
             mMap.moveCamera(CameraUpdateFactory.newLatLng(acres));
             mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
-        }if (result == 4){
+        }
+        if (result == 4) {
             LatLng andina = new LatLng(49.283426, -123.073944);
             mMap.addMarker(new MarkerOptions().position(andina).title("Andina brewing"));
             mMap.moveCamera(CameraUpdateFactory.newLatLng(andina));
             mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
-        }if (result == 5) {
+        }
+        if (result == 5) {
             LatLng andina = new LatLng(49.267202, -123.111560);
             mMap.addMarker(new MarkerOptions().position(andina).title("Bigrock brewing"));
             mMap.moveCamera(CameraUpdateFactory.newLatLng(andina));
             mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
-        }if (result == 6) {
+        }
+        if (result == 6) {
             LatLng main = new LatLng(49.264699, -123.099326);
             mMap.addMarker(new MarkerOptions().position(main).title("Main Street brewing"));
             mMap.moveCamera(CameraUpdateFactory.newLatLng(main));
             mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
+        }
+        if (result == 7) {
+            LatLng offrail = new LatLng(49.277840, -123.075981);
+            mMap.addMarker(new MarkerOptions().position(offrail).title("Off The Rail Brewing Co."));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(offrail));
+            mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
+        }
+        if (result == 8) {
+            LatLng postmarl = new LatLng(49.284143, -123.095711);
+            mMap.addMarker(new MarkerOptions().position(postmarl).title("Off The Rail Brewing Co."));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(postmarl));
+            mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
+
         }
     }
 
@@ -378,8 +462,18 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
             Uri uri = Uri.parse("http://bigrockurban.com/");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
-        }if (result == 5) {
+        }
+        if (result == 6) {
             Uri uri = Uri.parse("http://mainstreetbeer.ca/");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        }if (result == 7) {
+            Uri uri = Uri.parse("http://offtherailbrewing.com/");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        }
+        if (result == 8) {
+            Uri uri = Uri.parse("http://postmarkbrewing.com/");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
         }
@@ -398,33 +492,51 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
         if (result == 1) {
             Intent callIntent = new Intent(Intent.ACTION_DIAL);
             callIntent.setData(Uri.parse("tel:6044287457"));
-                startActivity(callIntent);
-        }if (result == 2) {
+            startActivity(callIntent);
+        }
+        if (result == 2) {
             Intent callIntent = new Intent(Intent.ACTION_DIAL);
             callIntent.setData(Uri.parse("tel:6046812739"));
             startActivity(callIntent);
-        }if (result == 3) {
+        }
+        if (result == 3) {
             Intent callIntent = new Intent(Intent.ACTION_DIAL);
             callIntent.setData(Uri.parse("tel:6046204589"));
             startActivity(callIntent);
-        }if (result == 4) {
+        }
+        if (result == 4) {
             Intent callIntent = new Intent(Intent.ACTION_DIAL);
             callIntent.setData(Uri.parse("tel:6042532400"));
             startActivity(callIntent);
-        }if (result == 5) {
+        }
+        if (result == 5) {
             Intent callIntent = new Intent(Intent.ACTION_DIAL);
             callIntent.setData(Uri.parse("tel:6047088311"));
             startActivity(callIntent);
-        }if (result == 6) {
+        }
+        if (result == 6) {
             Intent callIntent = new Intent(Intent.ACTION_DIAL);
             callIntent.setData(Uri.parse("tel:6043367711"));
             startActivity(callIntent);
         }
+        if (result == 7) {
+            Intent callIntent = new Intent(Intent.ACTION_DIAL);
+            callIntent.setData(Uri.parse("tel:6045635767"));
+            startActivity(callIntent);
+        }if (result == 8) {
+            Intent callIntent = new Intent(Intent.ACTION_DIAL);
+            callIntent.setData(Uri.parse("tel:6046991988"));
+            startActivity(callIntent);
         }
 
-    public void dash(View view) {
-        Uri uri = Uri.parse("https://www.doordash.com/food-delivery/vancouver-bc-restaurants/alcohol/");
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        startActivity(intent);
+        }
+
+        public void dash (View view){
+            Uri uri = Uri.parse("https://www.doordash.com/food-delivery/vancouver-bc-restaurants/alcohol/");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+
     }
-    }
+
+
+}

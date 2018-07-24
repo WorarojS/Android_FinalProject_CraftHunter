@@ -5,51 +5,61 @@ public class CraftLibrary {
             "Stanley Park Brewing",
             "Bomber Brewing","Yaletown Brewing Company",
             "33 Acres Brewing Company","Andina Brewing Company",
-            "Big Rock Urban Brewery","Main Street Brewing Company"
+            "Big Rock Urban Brewery","Main Street Brewing Company",
+            "Off The Rail Brewing Co.","Postmark Brewing"
     };
 
     private int mPic[] = {
             R.drawable.stanly1,
             R.drawable.bomeber1,R.drawable.yaletown1,
-            R.drawable.acres2,R.drawable.adina,R.drawable.br,R.drawable.main
+            R.drawable.acresthree,R.drawable.andina,R.drawable.bigr,R.drawable.mainone,
+            R.drawable.offrailbrew,R.drawable.postmark
     };
 
     private String mHead[]= {
             //Stanley head
-            "Address: Stanley Park Brewing Co. \n\n" +
-                    " 406-1148 Homer St.Vancouver, BC V6B 2X6\n\n"+
-                    "Pricing: $4 – $12 depending on beer and fill size.\n\n" +
+            "Address: Stanley Park Brewing Co. \n\n\n" +
+                    " 406-1148 Homer St.Vancouver, BC V6B 2X6\n\n\n"+
+                    "Pricing: $4 – $12 depending on beer and fill size.\n\n\n" +
                     "Hours: 9am – 5pm(park close) every day.",
             //Bomber Head
-            "Address:  Bomber Brewing Co.\n\n" +
-                    "1488 Adanac St, Vancouver, BC V5L 3J7 \n\n" +
-                    "Pricing: $6 – $12 depending on beer and fill size. \n\n" +
+            "Address:  Bomber Brewing Co.\n\n\n" +
+                    "1488 Adanac St, Vancouver, BC V5L 3J7 \n\n\n" +
+                    "Pricing: $6 – $12 depending on beer and fill size. \n\n\n" +
                     "Hours: noon – 11pm every day.",
             //Yealtown Head
-            "Address: Yaletown Brewing Co. \n\n" +
-                    " 1111 Mainland St., Vancouver, BC V6B 2T9\n\n" +
-                    "Pricing: $6 – $12 depending on beer and fill size. \n\n" +
+            "Address: Yaletown Brewing Co. \n\n\n" +
+                    " 1111 Mainland St., Vancouver, BC V6B 2T9\n\n\n" +
+                    "Pricing: $6 – $12 depending on beer and fill size. \n\n\n" +
                     "Hours: 11.30am - 12am.",
             //Acres head
-            "Address: 33 Acres Brewing Co\n\n" +
-                    "15 W 8th Ave, Vancouver, BC V5Y 1M8\n\n" +
-                    "Pricing: $5 – $12 depending on beer and fill size. \n\n" +
+            "Address: 33 Acres Brewing Co\n\n\n" +
+                    "15 W 8th Ave, Vancouver, BC V5Y 1M8\n\n\n" +
+                    "Pricing: $5 – $12 depending on beer and fill size. \n\n\n" +
                     "Hours: 9am - 11pm",
             //Andina head
-            "Address: Andina Brewing Co\n\n" +
-                    "1507 Powell St, Vancouver, V5L 5C3\n\n" +
-                    "Pricing: $5 – $12 depending on beer and fill size. \n\n" +
+            "Address: Andina Brewing Co\n\n\n" +
+                    "1507 Powell St, Vancouver, V5L 5C3\n\n\n" +
+                    "Pricing: $5 – $12 depending on beer and fill size. \n\n\n" +
                     "Hours: 12-11pm",
             //bigrock
-            "Address: Big Rock Urban Brewery\n\n" +
-                    "310 West 4th Ave., Vancouver, BC V5Y 1G9 \n\n" +
-                    "Pricing: $6 – $12 depending on beer and fill size. \n\n" +
+            "Address: Big Rock Urban Brewery\n\n\n" +
+                    "310 West 4th Ave., Vancouver, BC V5Y 1G9 \n\n\n" +
+                    "Pricing: $6 – $12 depending on beer and fill size. \n\n\n" +
                     "Hours: 11am - 11pm",
             //main
-            "Address: Main Street Brewing Co.\n" +
-                    "261 E 7th Ave, Vancouver, BC V5T 0B4\n\n" +
-                    "Pricing: $5 – $12 depending on beer and fill size. \n\n" +
-                    "Hours: 2pm-11pm"
+            "Address: Main Street Brewing Co.\n\n\n" +
+                    "261 E 7th Ave, Vancouver, BC V5T 0B4\n\n\n" +
+                    "Pricing: $5 – $12 depending on beer and fill size. \n\n\n" +
+                    "Hours: 2pm-11pm",
+            //offrail
+            "Address: Off The Rail Brewing Co.\n\n\n" +
+                    "1351 Adanac St, Vancouver, BC V5L 2C4\n\n\n"+
+                    "Hours: 12-8pm",
+            //postmarl
+            "Address: Postmark Brewing Co.\n\n\n" +
+                    " 55 Dunlevy Ave, Vancouver, BC V6A 1G7\n\n\n" +
+                    "Hours: 11am-11pm"
 
 
     };
@@ -94,7 +104,24 @@ public class CraftLibrary {
                     " The company has a brewery in Alberta, as well as this one in BC and their BC brews are locally inspired and crafted using as many Lower Mainland ingredients as possible.",
             "About Main Street Brewing Co.\n" +
                     "RESIDES IN ONE OF VANCOUVER’S FEW SURVIVING INDUSTRIAL HERITAGE BUILDINGS, THE “VANCOUVER BREWERIES GARAGE” (1913)," +
-                    " IN THE HISTORIC BREWERY CREEK DISTRICT."
+                    " IN THE HISTORIC BREWERY CREEK DISTRICT.",
+
+            //offtherail
+            "About Off the Rail Brewing\n\n" +
+                    " is equipped with a 2000 L brewhouse and both 4000 L and 2000 L fermentation tanks.\n" +
+                    "\n" +
+                    "We will be adding two 6000 L fermentation tanks that will be dedicated Pilsner and Lager vessels in the upcoming months.\n" +
+                    "\n" +
+                    "Our 4000 L tanks are home to our ‘main line’ beers with the 2000 L tanks normally reserved for seasonal brews.\n" +
+                    "\n" +
+                    "Many of our tasting room beers are done in a 45 L test batch system and are only available until the next batch is complete. Some make their way to a 2000 L batch of 650 mL bottles.\n" +
+                    "\n" +
+                    "Steve’s love for traditional English ales, German lagers, and US IPAs make up the majority of what we brew… along with a few other gems that we put into our tasting room rotation.",
+            //postmark
+            "About Postmark Brewing\n" +
+                    "In the spring of 2013, three long-time friends with a passion for great beer dove head first into crafting their own quality-driven recipes – while having too much fun throughout the process. " +
+                    "Postmark Brewing was born. With a work hard/play hard mentality, " +
+                    "Postmark Brewing boasts a line up of sessionable craft beers that cater to the BC leisure and activity lifestyle."
     };
 
 
@@ -283,30 +310,103 @@ public class CraftLibrary {
                     "easy drinking beer that finishes crisply. Afterall, The Main Thing Is The Beer.",
             "Brewed by \nMain Street Brewing Co\n\n" +
                     "NAKED FOX IPA\n" +
-                    "Style: IPA\n" +
-                    "ABV: 6.8%\n" +
-                    "IBU: 55\n" +
-                    "Released: March 2016\n" +
+                    "Style: IPA\n\n" +
+                    "ABV: 6.8%\n\n" +
+                    "IBU: 55\n\n" +
+                    "Released: March 2016\n\n" +
                     "Born from infamy, our Naked Fox is a sly one. This dry IPA is brewed using a variety of North American and Southern Hemisphere hops," +
                     " packing in everything you’d want in hop flavour and aroma into a single beer." +
                     " The dryness on the malt side lets the hops shine through.",
             "Brewed by \nMain Street Brewing Co\n\n" +
-                    "Style: IPA\n" +
-                    "ABV: 5.5%\n" +
-                    "IBU: 50\n" +
-                    "Hops: Cascade hops\n" +
-                    "Released: March 2016\n" +
+                    "Style: IPA\n\n" +
+                    "ABV: 5.5%\n\n" +
+                    "IBU: 50\n\n" +
+                    "Hops: Cascade hops\n\n" +
+                    "Released: March 2016\n\n" +
                     "Named for our neighbours, the artist-run Western Front studio (former home of the Knights of Pythias), Old Knights Pale Ale is a Pacific" +
                     " Northwest take on the classic English Pale Ale – hop forward, aromatic with slight citrus and lots of pine notes. Brewed with Columbus and Cascade hops.",
             "Brewed by \nMain Street Brewing Co\n\n" +
-                    "Style: Saison\n" +
-                    "ABV: 6%\n" +
-                    "IBU: 15\n" +
-                    "Released: January 2015\n" +
+                    "Style: Saison\n\n" +
+                    "ABV: 6%\n\n" +
+                    "IBU: 15\n\n" +
+                    "Released: January 2015\n\n" +
                     "Saison No.7 is fermented with a blend of saison yeasts. Light in colour with a golden haze," +
                     " this farmhouse saison shows through with fruity esters, pepper and citrus notes. A perfect summer sipper."
+    };
+
+    private int sub8[]={
+        R.drawable.rail1,R.drawable.rail2,R.drawable.rail3,R.drawable.rail4
+    };
+    private String head8[]={
+        "CLASSIC PALE ALE","PSYCLE PATH LAGER",
+            "CZECHMATE PILSNER","CRAZY TRAIN IPA"
+    };
+    private String des8[]={
+            "Brewed by \nOff The Rail Brewing Co.\n\n" +
+                    "Style: PALE ALE\n\n" +
+                    "ABV: 5%\n\n" +
+                    "IBU: 40\n\n" +"Our pale ale is made from premium 2-row and lightly roasted English Barley." +
+                    " With well-rounded caramel flavor and pleasantly finished with traditional Golding hops, " +
+                    "our ale will satisfy your taste buds and take you back to your favourite Old English Inn.",
+
+            "Brewed by \nOff The Rail Brewing Co.\n\n" +
+                    "Style: Lager\n\n" +
+                    "ABV: 5%\n\n" +
+                    "IBU: 12\n\n" +
+                    "Our lager is well balanced, smooth and refreshing. Our lagers are not released until conditioning or “lagering” at lower temperatures is complete." +
+                    " As someone else said, “we will serve no beer before its time,” and we know you will appreciate the difference in the time we take to mature our lager.",
 
 
+            "Brewed by \nOff The Rail Brewing Co.\n\n" +
+                    "Style: PILSNER\n\n" +
+                    "ABV: 5.2%\n\n" +
+                    "IBU: 22\n\n" +"Our Czech style pilsner combines premium pilsner malt and just the right amount of bittering hops to give this medium-bodied pilsner a full, well-rounded flavor." +
+                    " A unique taste boldly finished with the noble Czech Saaz hop.",
+
+            "Brewed by \nOff The Rail Brewing Co.\n\n" +
+                    "Style: IPA\n\n" +
+                    "ABV: 6.5%\n\n" +
+                    "IBU: 75\n\n"+"Going Off The Rail for a Crazy Train! English style IPA with plenty of malt balance and substantial" +
+                    " amounts of Chinook and Cascade for a full, rich flavour."
+
+    };
+    //postmark
+    private int sub9[]={
+            R.drawable.pm1,R.drawable.pm2,R.drawable.pm3,R.drawable.pm4
+
+    };
+    private String head9[]={
+            "Sevens IPA","Postmark Stout","Mosaic IPA","PSF Lager"
+
+    };
+    private String des9[]={
+            "Brewed by \nPostmark Brewing Co.\n\n" +
+                    "Style: IPA\n\n" +
+            "6.0% ABV\n\n" +
+                    "52 IBU\n\n" +
+
+                    "Balanced | Coastal | Mighty | Brewed in honour of the Canada Sevens; this IPA has large tropical notes and a balanced bitterness.",
+
+            "Brewed by \nOff The Rail Brewing Co.\n\n" +
+                    "Style: Stout\n\n" +
+                    "4.8 ABV\n\n" +
+                    "30 IBU\n\n" +
+
+                    "Roasty | Dark | Refined | Designed for drinkability. This Stout has a perfectly balanced body with notes of chocolate, " +
+                    "coffee and hints of caramel.",
+
+            "Brewed by \nOff The Rail Brewing Co.\n\n" +
+                    "Style: IPA\n\n" +
+                    "6 ABV\n\n" +
+                    "54 IBU\n\n" +
+
+                    "Tropical | Golden | Polished | A golden IPA filled with the tropical notes of the Mosaic Hops. A profile perfect for a NW IPA.",
+
+            "Brewed by \nOff The Rail Brewing Co.\n\n" +
+                    "Style: Lager\n\n" +
+                    "4.7 ABV\n\n" +
+                    "18 IBU\n\n" +
+                    "Tranquil | Striking | Pleasant | Brewed in collaboration with Pacific Salmon Foundation to support salmon conservation project in BC."
 
     };
 
@@ -424,6 +524,34 @@ public class CraftLibrary {
     public String getDes7(int a) {
         String mainDes = des7[a];
         return mainDes;
+    }
+    public int getSub8(int a) {
+        int railSub = sub8[a];
+        return railSub;
+    }
+
+    public String getHead8(int a) {
+        String railHead = head8[a];
+        return railHead;
+    }
+
+    public String getDes8(int a) {
+        String railDes = des8[a];
+        return railDes;
+    }
+    public int getSub9(int a) {
+        int postSub = sub9[a];
+        return postSub;
+    }
+
+    public String getHead9(int a) {
+        String postHead = head9[a];
+        return postHead;
+    }
+
+    public String getDes9(int a) {
+        String postDes = des9[a];
+        return postDes;
     }
 }
 

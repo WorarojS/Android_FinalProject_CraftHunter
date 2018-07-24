@@ -125,6 +125,42 @@ public class SubActivity extends AppCompatActivity {
             head.setText(mLibrary.getHead7(3));
             pic.setImageResource(mLibrary.getSub7(3));
             des.setText(mLibrary.getDes7(3));
+        }if (result == 22) {
+            head.setText(mLibrary.getHead8(0));
+            pic.setImageResource(mLibrary.getSub8(0));
+            des.setText(mLibrary.getDes8(0));
+        }
+        if (result == 23) {
+            head.setText(mLibrary.getHead8(1));
+            pic.setImageResource(mLibrary.getSub8(1));
+            des.setText(mLibrary.getDes8(1));
+        }
+        if (result == 24) {
+            head.setText(mLibrary.getHead8(2));
+            pic.setImageResource(mLibrary.getSub8(2));
+            des.setText(mLibrary.getDes8(2));
+        }if (result == 25) {
+            head.setText(mLibrary.getHead8(3));
+            pic.setImageResource(mLibrary.getSub8(3));
+            des.setText(mLibrary.getDes8(3));
+        }if (result == 26) {
+            head.setText(mLibrary.getHead9(0));
+            pic.setImageResource(mLibrary.getSub9(0));
+            des.setText(mLibrary.getDes9(0));
+        }
+        if (result == 27) {
+            head.setText(mLibrary.getHead9(1));
+            pic.setImageResource(mLibrary.getSub9(1));
+            des.setText(mLibrary.getDes9(1));
+        }
+        if (result == 28) {
+            head.setText(mLibrary.getHead9(2));
+            pic.setImageResource(mLibrary.getSub9(2));
+            des.setText(mLibrary.getDes9(2));
+        }if (result == 29) {
+            head.setText(mLibrary.getHead9(3));
+            pic.setImageResource(mLibrary.getSub9(3));
+            des.setText(mLibrary.getDes9(3));
         }
 
     }
