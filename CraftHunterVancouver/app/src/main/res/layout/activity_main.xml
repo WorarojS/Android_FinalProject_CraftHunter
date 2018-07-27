@@ -11,13 +11,45 @@
     tools:context=".MainActivity">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical">
-            <TextView
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/logo1" />
+                <Button
+                android:id="@+id/About"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/medium"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:padding="33dp"
+                android:onClick="showText"
+                android:layout_gravity="center"
+                />
+                <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:fontFamily="@font/medium"
+                android:padding="15dp"
+                />
+                <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Map"
@@ -33,7 +65,7 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:padding="10dp"
-                android:layout_height="200dp"
+                android:layout_height="300dp"
                 android:orientation="vertical"
                 android:layout_gravity="center"
                 >
@@ -45,7 +77,7 @@
                     tools:context=".MapsActivity"
                     android:layout_gravity="center"/>
             </LinearLayout>
-    <TextView
+                <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Brewery List"
@@ -56,121 +88,184 @@
         android:paddingBottom="20dp"
         android:textColor="#FFFFFF"
         />
+
+
+
             <ScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
 
-    <GridLayout
-        android:id="@+id/grid"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:padding="15dp"
-        android:layout_gravity="center"
-        android:useDefaultMargins="true">
+
+                <GridLayout
+                    android:id="@+id/grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:scrollbars="horizontal"
+                    android:useDefaultMargins="true">
 
 
-        <ImageButton
-            android:id="@+id/but1"
-            android:tag="0"
-            android:layout_column="0"
-            android:layout_row="0"
-            android:layout_width="175dp"
-            android:layout_height="175dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/pic1"
-            android:background="@null" />
-        <ImageButton
-            android:id="@+id/but2"
-            android:tag="1"
-            android:layout_column="1"
-            android:layout_row="0"
-            android:layout_width="175dp"
-            android:layout_height="175dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/pic2"
-            android:background="@null" />
-        <ImageButton
-            android:id="@+id/but3"
-            android:tag="2"
-            android:layout_column="0"
-            android:layout_row="1"
-            android:layout_width="175dp"
-            android:layout_height="175dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/pic3"
-            android:background="@null"/>
-        <ImageButton
-            android:id="@+id/but4"
-            android:tag="3"
-            android:layout_column="1"
-            android:layout_row="1"
-            android:layout_width="175dp"
-            android:layout_height="175dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/acres2"
-            android:background="@null"/>
-        <ImageButton
-            android:id="@+id/but5"
-            android:tag="4"
-            android:layout_column="0"
-            android:layout_row="2"
-            android:layout_width="175dp"
-            android:layout_height="175dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/adina"
-            android:background="@null"/>
-        <ImageButton
-            android:id="@+id/but6"
-            android:tag="5"
-            android:layout_column="1"
-            android:layout_row="2"
-            android:layout_width="175dp"
-            android:layout_height="175dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/br"
-            android:background="@null"/>
-        <ImageButton
-            android:id="@+id/but7"
-            android:tag="6"
-            android:layout_column="0"
-            android:layout_row="3"
-            android:layout_width="175dp"
-            android:layout_height="175dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/main"
-            android:background="@null"/>
-        <ImageButton
-            android:id="@+id/but8"
-            android:tag="7"
-            android:layout_column="1"
-            android:layout_row="3"
-            android:layout_width="175dp"
-            android:layout_height="175dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/offrail"
-            android:background="@null"/>
-        <ImageButton
-            android:id="@+id/but9"
-            android:tag="8"
-            android:layout_column="0"
-            android:layout_row="4"
-            android:layout_width="175dp"
-            android:layout_height="175dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/postmarklogo"
-            android:background="@null"/>
-            </GridLayout>
+                    <ImageButton
+                        android:id="@+id/but1"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:tag="0"
+                        app:srcCompat="@drawable/pic1" />
+
+                    <ImageButton
+                        android:id="@+id/but2"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_column="1"
+                        android:layout_row="0"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:tag="1"
+                        app:srcCompat="@drawable/pic2" />
+
+                    <ImageButton
+                        android:id="@+id/but3"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:tag="2"
+                        app:srcCompat="@drawable/pic3" />
+
+                    <ImageButton
+                        android:id="@+id/but4"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_column="1"
+                        android:layout_row="1"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:tag="3"
+                        app:srcCompat="@drawable/acres2" />
+
+                    <ImageButton
+                        android:id="@+id/but5"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:tag="4"
+                        app:srcCompat="@drawable/adina" />
+
+                    <ImageButton
+                        android:id="@+id/but6"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_column="1"
+                        android:layout_row="2"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:tag="5"
+                        app:srcCompat="@drawable/br" />
+
+                    <ImageButton
+                        android:id="@+id/but7"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_column="0"
+                        android:layout_row="3"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:tag="6"
+                        app:srcCompat="@drawable/main" />
+
+                    <ImageButton
+                        android:id="@+id/but8"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_column="1"
+                        android:layout_row="3"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:tag="7"
+                        app:srcCompat="@drawable/offrail" />
+
+                    <ImageButton
+                        android:id="@+id/but9"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_column="0"
+                        android:layout_row="4"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:tag="8"
+                        app:srcCompat="@drawable/postmarklogo" />
+
+                    <ImageButton
+                        android:id="@+id/but10"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_column="1"
+                        android:layout_row="4"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:tag="9"
+                        app:srcCompat="@drawable/powelllogo" />
+
+                    <ImageButton
+                        android:id="@+id/but11"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_column="0"
+                        android:layout_row="5"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:tag="10"
+                        app:srcCompat="@drawable/steamlogo" />
+
+                    <ImageButton
+                        android:id="@+id/but12"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_column="1"
+                        android:layout_row="5"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:tag="11"
+                        app:srcCompat="@drawable/slogo" />
+                    <ImageButton
+                        android:id="@+id/but13"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_column="0"
+                        android:layout_row="6"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:tag="12"
+                        app:srcCompat="@drawable/doglogo" />
+
+                </GridLayout>
             </ScrollView>
         </LinearLayout>
     </ScrollView>
+
+
 </LinearLayout>

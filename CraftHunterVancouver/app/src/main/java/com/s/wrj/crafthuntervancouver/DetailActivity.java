@@ -2,17 +2,22 @@ package com.s.wrj.crafthuntervancouver;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.view.GravityCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -33,14 +38,19 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
     private ImageButton mSub3;
     private ImageButton mSub4;
     private GoogleMap mMap;
-    private Button webBut;
     private ImageButton dash;
+
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
+        Intent SecondActivityIntent = getIntent();
+        String name = SecondActivityIntent.getStringExtra("num");
+        int result = Integer.valueOf(name);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -55,16 +65,13 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
         mSub3 = (ImageButton) findViewById(R.id.subBut3);
         mSub4 = (ImageButton) findViewById(R.id.subBut4);
         dash = findViewById(R.id.dash);
-        webBut = findViewById(R.id.web_but);
 
 
-        Intent SecondActivityIntent = getIntent();
-        String name = SecondActivityIntent.getStringExtra("num");
-        int result = Integer.valueOf(name);
 
         mPic.setImageResource(mLibrary.getmPic(result));
         mName.setText(mLibrary.getmName(result));
         mHead.setText(mLibrary.getmHead(result));
+        initView();
         mDes.setText(mLibrary.getmDes(result));
         dash.setImageResource(R.drawable.dash);
 
@@ -306,6 +313,7 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
                     startActivity(intent);
                 }
             });
+            //postmark
         }
         else if (result == 8) {
             mSub1.setImageResource(mLibrary.getSub9(0));
@@ -341,6 +349,144 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
                 }
             });
         }
+        //powell
+        else if (result == 9) {
+            mSub1.setImageResource(mLibrary.getSub10(0));
+            mSub1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 30);
+                    startActivity(intent);
+                }
+            });
+            mSub2.setImageResource(mLibrary.getSub10(1));
+            mSub2.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 31);
+                    startActivity(intent);
+                }
+            });
+            mSub3.setImageResource(mLibrary.getSub10(2));
+            mSub3.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 32);
+                    startActivity(intent);
+                }
+            });
+            mSub4.setImageResource(mLibrary.getSub10(3));
+            mSub4.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 33);
+                    startActivity(intent);
+                }
+            });
+            //steam
+        }else if (result == 10) {
+                mSub1.setImageResource(mLibrary.getSub11(0));
+                mSub1.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View view) {
+                        Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                        intent.putExtra("code", 34);
+                        startActivity(intent);
+                    }
+                });
+                mSub2.setImageResource(mLibrary.getSub11(1));
+                mSub2.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View view) {
+                        Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                        intent.putExtra("code", 35);
+                        startActivity(intent);
+                    }
+                });
+                mSub3.setImageResource(mLibrary.getSub11(2));
+                mSub3.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View view) {
+                        Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                        intent.putExtra("code", 36);
+                        startActivity(intent);
+                    }
+                });
+                mSub4.setImageResource(mLibrary.getSub11(3));
+                mSub4.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View view) {
+                        Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                        intent.putExtra("code", 37);
+                        startActivity(intent);
+                    }
+                });
+        //fellow
+        }else if (result == 11) {
+            mSub1.setImageResource(mLibrary.getSub12(0));
+            mSub1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 38);
+                    startActivity(intent);
+                }
+            });
+            mSub2.setImageResource(mLibrary.getSub12(1));
+            mSub2.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 39);
+                    startActivity(intent);
+                }
+            });
+            mSub3.setImageResource(mLibrary.getSub12(2));
+            mSub3.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 40);
+                    startActivity(intent);
+                }
+            });
+            mSub4.setImageResource(mLibrary.getSub12(3));
+            mSub4.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 41);
+                    startActivity(intent);
+                }
+            });
+        //dogwood
+        }else if (result == 12) {
+            mSub1.setImageResource(mLibrary.getSub13(0));
+            mSub1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 42);
+                    startActivity(intent);
+                }
+            });
+            mSub2.setImageResource(mLibrary.getSub13(1));
+            mSub2.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 43);
+                    startActivity(intent);
+                }
+            });
+            mSub3.setImageResource(mLibrary.getSub13(2));
+            mSub3.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 44);
+                    startActivity(intent);
+                }
+            });
+            mSub4.setImageResource(mLibrary.getSub13(3));
+            mSub4.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(DetailActivity.this, SubActivity.class);
+                    intent.putExtra("code", 45);
+                    startActivity(intent);
+                }
+            });
+
+        }
 
         initView();
     }
@@ -351,18 +497,19 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
     }
 
     public void shareBtn(View view) {
+        Intent SecondActivityIntent = getIntent();
+        String name = SecondActivityIntent.getStringExtra("num");
+        int result = Integer.valueOf(name);
         Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
         sharingIntent.setType("text/plain");
-        String shareBody = "Here is the share content body";
-        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
+        String shareBody = mLibrary.getmName(result)+mLibrary.getmHead(result);
+        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, mLibrary.getmName(result));
         sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
         startActivity(Intent.createChooser(sharingIntent, "Share via"));
     }
-
     private void initView() {
         Resize.doResizeTextView(mDes, MAX_LINES, "View More", true);
     }
-
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -421,11 +568,35 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
         }
         if (result == 8) {
             LatLng postmarl = new LatLng(49.284143, -123.095711);
-            mMap.addMarker(new MarkerOptions().position(postmarl).title("Off The Rail Brewing Co."));
+            mMap.addMarker(new MarkerOptions().position(postmarl).title("Postmark Brewing Co."));
             mMap.moveCamera(CameraUpdateFactory.newLatLng(postmarl));
             mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
 
+        }if (result == 9) {
+            LatLng powell = new LatLng(49.283288, -123.075835);
+            mMap.addMarker(new MarkerOptions().position(powell).title("Powell Brewing Co."));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(powell));
+            mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
+
+        }if (result == 10) {
+            LatLng steam = new LatLng(49.284910, -123.110815);
+            mMap.addMarker(new MarkerOptions().position(steam).title("Steamworks Brewing Co."));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(steam));
+            mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
+
+        }if (result == 11) {
+            LatLng strange = new LatLng(49.272492, -123.077844);
+            mMap.addMarker(new MarkerOptions().position(strange).title("Strange Fellows Brewing Co."));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(strange));
+            mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
+
+        }if (result == 12) {
+            LatLng dog = new LatLng(49.209889, -123.081431);
+            mMap.addMarker(new MarkerOptions().position(dog).title("Dog Wood Brewing Co."));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(dog));
+            mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
         }
+
     }
 
     public void webBut(View view) {
@@ -474,6 +645,22 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
         }
         if (result == 8) {
             Uri uri = Uri.parse("http://postmarkbrewing.com/");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        }if (result == 9) {
+            Uri uri = Uri.parse("http://powellbeer.com/");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        }if (result == 10) {
+            Uri uri = Uri.parse("http://steamworks.com/");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        }if (result == 11) {
+            Uri uri = Uri.parse("http://strangefellowsbrewing.com/");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        }if (result == 12) {
+            Uri uri = Uri.parse("http://stanleyparkbrewing.com/");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
         }
@@ -527,9 +714,29 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
             Intent callIntent = new Intent(Intent.ACTION_DIAL);
             callIntent.setData(Uri.parse("tel:6046991988"));
             startActivity(callIntent);
+        }if (result == 9) {
+            Intent callIntent = new Intent(Intent.ACTION_DIAL);
+            callIntent.setData(Uri.parse("tel:6045582537"));
+            startActivity(callIntent);
+        }
+        if (result == 10) {
+            Intent callIntent = new Intent(Intent.ACTION_DIAL);
+            callIntent.setData(Uri.parse("tel:6046892739"));
+            startActivity(callIntent);
+
+        }if (result == 11) {
+            Intent callIntent = new Intent(Intent.ACTION_DIAL);
+            callIntent.setData(Uri.parse("tel:6042150092"));
+            startActivity(callIntent);
+        }if (result == 12) {
+            Intent callIntent = new Intent(Intent.ACTION_DIAL);
+            callIntent.setData(Uri.parse("tel:6043182280"));
+            startActivity(callIntent);
         }
 
-        }
+
+
+    }
 
         public void dash (View view){
             Uri uri = Uri.parse("https://www.doordash.com/food-delivery/vancouver-bc-restaurants/alcohol/");
@@ -537,6 +744,8 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
             startActivity(intent);
 
     }
+
+
 
 
 }
