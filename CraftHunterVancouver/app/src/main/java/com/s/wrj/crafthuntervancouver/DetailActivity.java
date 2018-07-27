@@ -29,6 +29,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class DetailActivity extends AppCompatActivity implements OnMapReadyCallback {
     private CraftLibrary mLibrary = new CraftLibrary();
     private static final int MAX_LINES = 2;
+    private TextView mResizableTextView;
     private ImageView mPic;
     private TextView mName;
     private TextView mHead;
@@ -39,6 +40,7 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
     private ImageButton mSub4;
     private GoogleMap mMap;
     private ImageButton dash;
+    Intent SecondActivityIntent = getIntent();
 
 
 
@@ -47,6 +49,7 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
 
         Intent SecondActivityIntent = getIntent();
         String name = SecondActivityIntent.getStringExtra("num");
@@ -71,7 +74,6 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
         mPic.setImageResource(mLibrary.getmPic(result));
         mName.setText(mLibrary.getmName(result));
         mHead.setText(mLibrary.getmHead(result));
-        initView();
         mDes.setText(mLibrary.getmDes(result));
         dash.setImageResource(R.drawable.dash);
 
@@ -487,8 +489,8 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
             });
 
         }
+    initView();
 
-        initView();
     }
 
 
@@ -507,6 +509,7 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
         sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
         startActivity(Intent.createChooser(sharingIntent, "Share via"));
     }
+
     private void initView() {
         Resize.doResizeTextView(mDes, MAX_LINES, "View More", true);
     }
